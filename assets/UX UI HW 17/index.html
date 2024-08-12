@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arianna Wilson - UX/UI Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0a0c0d;
+            color: #c7c9d3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0d1117;
+            color: #58a6ff;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 2px solid #21262d;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #161b22;
+            border-bottom: 1px solid #21262d;
+        }
+
+        nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px 30px;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            background-color: #21262d;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #0d1117;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #58a6ff;
+            border-bottom: 2px solid #21262d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-me p,
+        .projects p {
+            color: #8b949e;
+            line-height: 1.6;
+        }
+
+        .projects .project {
+            margin-bottom: 50px;
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #21262d;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-bottom: 10px;
+            color: #8b949e;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #21262d;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #161b22;
+            color: #c9d1d9;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            border-color: #58a6ff;
+            outline: none;
+        }
+
+        .contact button {
+            padding: 15px 30px;
+            background-color: #21262d;
+            color: #58a6ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .contact button:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d1117;
+            color: #8b949e;
+            border-top: 2px solid #21262d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Arianna Wilson - UX/UI Designer</h1>
+    </header>
+
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about-me" class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm Arianna Wilson, a passionate UX/UI designer with a love for creating intuitive and engaging
+                digital experiences. My work is at the intersection of aesthetics and technology, focusing on delivering
+                user-centered designs that are both functional and futuristic.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Brief description of the project. Explain the problem you solved and the process you followed.</p>
+                <img src="project1.jpg" alt="Project One Screenshot">
+            </div>
+
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Brief description of the project. Explain the problem you solved and the process you followed.</p>
+                <img src="project2.jpg" alt="Project Two Screenshot">
+            </div>
+
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>Brief description of the project. Explain the problem you solved and the process you followed.</p>
+                <img src="project3.jpg" alt="Project Three Screenshot">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Arianna Wilson. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

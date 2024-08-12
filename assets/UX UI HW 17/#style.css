@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0a0c0d;
+    color: #c7c9d3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://raw.githubusercontent.com/yourusername/yourrepository/branchname/assets/Pro%20Image%20copy.png');
+    background-size: cover;
+    background-position: center;
+    color: #58a6ff;
+    padding: 80px 40px;
+    text-align: center;
+    border-bottom: 2px solid #21262d;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 12, 13, 0.7); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #161b22;
+    border-bottom: 1px solid #21262d;
+}
+
+nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #21262d;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #0d1117;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #58a6ff;
+    border-bottom: 2px solid #21262d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me p,
+.projects p {
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.projects .project {
+    margin-bottom: 50px;
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #21262d;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 10px;
+    color: #8b949e;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #21262d;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
+
+.contact button {
+    padding: 15px 30px;
+    background-color: #21262d;
+    color: #58a6ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.contact button:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d1117;
+    color: #8b949e;
+    border-top: 2px solid #21262d;
+}
